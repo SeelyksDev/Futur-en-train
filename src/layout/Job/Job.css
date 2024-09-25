@@ -1,10 +1,11 @@
 #job {
+    position: relative;
     background-image: url(../../assets/webp/bg-gradient.webp);
     background-size: contain;
     color: white;
     padding: 0 var(--padding-mobile);
     padding-top: 50px;
-    padding-bottom: 140px;
+    padding-bottom: 270px;
 }
 
 .job-title {
@@ -17,7 +18,8 @@
 }
 
 .carousel {
-    margin-top: 20px;
+    position: absolute;
+    margin-top: 60px;
 }
 
 .carousel-header {
@@ -31,6 +33,16 @@
 }
 
 .arrows-container {
+    position: absolute;
+    top: 0;
     display: flex;
     align-items: center;
+}
+
+.slider {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
