@@ -1,7 +1,19 @@
 import Button from "../../components/Button/Button";
+import jobsList from "../../data/jobs.json";
+import Slider from "react-slick";
 import "./Job.css";
 
 const Job = () => {
+    const settings = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 3, // Montre 3 images à la fois
+        slidesToScroll: 1, // Défiler d'une image à la fois
+        centerMode: true, // Met en valeur l'image du centre et "peek" celles qui arrivent
+        centerPadding: "60px", // Ajoute un espace pour voir un aperçu des images suivantes
+    };
+
     return (
         <section id="job">
             <h2 className="job-title">Un métier, une formation, un avenir</h2>

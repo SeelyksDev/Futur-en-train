@@ -1,0 +1,18 @@
+[
+    {
+        "picture": "../assets/webp/img-metier-accueillir.webp",
+        "title": "Accueillir et accompagner les voyageurs"
+    },
+    {
+        "picture": "../assets/webp/img-metier-organiser.webp",
+        "title": "Organiser et gérer la circulation"
+    },
+    {
+        "picture": "../assets/webp/img-metier-entretenir.webp",
+        "title": "Entretenir le réseau et le matériel roulant"
+    }, 
+    {
+        "picture": "../assets/webp/img-metier-preparer.webp",
+        "title": "Préparer et acheminer les trains"
+    }
+]
