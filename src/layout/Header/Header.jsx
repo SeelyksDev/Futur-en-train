@@ -27,11 +27,13 @@ const Header = () => {
                 {isSmallScreen ? (
                     <BurgerMenu />
                 ) : (
-                    <ul>
-                        <li>Formations</li>
-                        <li>Métiers</li>
-                        <li>Menu</li>
-                    </ul>
+                    <>
+                        <ul className="nav-ul">
+                            <li className="nav-li">Formations</li>
+                            <li className="nav-li">Métiers</li>
+                        </ul>
+                        <BurgerMenu />
+                    </>
                 )}
             </nav>
         </header>

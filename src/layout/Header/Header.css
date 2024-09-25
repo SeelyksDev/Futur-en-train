@@ -14,9 +14,21 @@ nav>img {
     height: 72px;
     width: 130px;
     object-fit: contain;
+
+    @media screen and (min-width: 1025px) {
+        height: 100%;
+        width: 220px;
+    }
 }
 
-ul {
+.nav-ul {
     display: flex;
     align-items: center;
+}
+
+.nav-li {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 800;
+    margin-right: 20px;
 }
