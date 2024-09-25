@@ -4,6 +4,7 @@
     justify-content: center;
     background-image: url("../../assets/webp/header-home.webp");
     background-size: cover;
+    background-position: center;
     height: 400px;
     padding: 0 var(--padding-mobile);
 

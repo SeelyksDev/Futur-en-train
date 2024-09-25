@@ -53,4 +53,7 @@
     align-items: center;
     overflow-x: scroll;
     overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
 }

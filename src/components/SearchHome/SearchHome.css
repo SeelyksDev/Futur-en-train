@@ -2,6 +2,11 @@
     display: flex;
     flex-direction: column;
     height: 110px;
+
+    @media screen and (min-width: 1025px) {
+        flex-direction: row;
+    }
+
 }
 
 .wrap {
@@ -12,6 +17,7 @@
     padding: 10px var(--padding-mobile);
     height: 50%;
     color: white;
+
 }
 
 .wrap-text>span {
