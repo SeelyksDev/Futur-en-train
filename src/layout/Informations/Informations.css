@@ -1,0 +1,13 @@
+#informations {
+    background-color: #FEF2F7;
+    padding: 40px var(--padding-mobile);
+}
+
+.informations-title {
+    font-weight: 900;
+}
+
+.informations-text {
+    margin-bottom: 35px;
+    color: gray;
+}

@@ -1,0 +1,10 @@
+.btn-gradient {
+    display: block;
+    background: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 0.8em;
+}

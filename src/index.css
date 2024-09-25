@@ -1,5 +1,6 @@
 :root {
   --primary-color: linear-gradient(to left, #ee0979, #ff6a00);
+  --padding-mobile: 20px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -36,6 +37,10 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h1, h2, h3, h4 {
+  margin: 0
 }
 
 button {
