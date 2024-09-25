@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Button from "../../components/Button/Button";
 import jobsList from "../../data/jobs.json";
 import CarouselCard from "../../components/CarouselCard/CarouselCard";
@@ -8,7 +8,52 @@ import slash from "../../assets/svg/slash.svg";
 import "./Job.css";
 
 const Job = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const carouselRef = useRef();
+    const [isAtStart, setIsAtStart] = useState(true);
+    const [isAtEnd, setIsAtEnd] = useState(false);
+
+    const scrollNext = () => {
+        if (carouselRef.current) {
+            carouselRef.current.scrollBy({
+                left: carouselRef.current.clientWidth,
+                behavior: "smooth",
+            });
+        }
+    };
+
+    const scrollPrev = () => {
+        if (carouselRef.current) {
+            carouselRef.current.scrollBy({
+                left: -carouselRef.current.clientWidth,
+                behavior: "smooth",
+            });
+        }
+    };
+
+    const checkScrollPosition = () => {
+        if (carouselRef.current) {
+            const { scrollLeft, scrollWidth, clientWidth } =
+                carouselRef.current;
+            setIsAtStart(scrollLeft === 0);
+            setIsAtEnd(scrollLeft + clientWidth >= scrollWidth);
+        }
+    };
+
+    useEffect(() => {
+        const carouselElement = carouselRef.current;
+        if (carouselElement) {
+            checkScrollPosition();
+            carouselElement.addEventListener("scroll", checkScrollPosition);
+
+            return () => {
+                carouselElement.removeEventListener(
+                    "scroll",
+                    checkScrollPosition
+                );
+            };
+        }
+    }, []);
+
     return (
         <section id="job">
             <h2 className="job-title">Un métier, une formation, un avenir</h2>
@@ -23,16 +68,16 @@ const Job = () => {
                 <div className="carousel-header">
                     <h4 className="carousel-title">Métiers</h4>
                     <div className="arrows-container">
-                        <button className="arrow_previous">
+                        <button className="arrow_previous" onClick={scrollPrev}>
                             <img src={leftArrow} alt="flèche droite" />
                         </button>
                         <img src={slash} alt="slash" />
-                        <button className="arrow_next">
+                        <button className="arrow_next" onClick={scrollNext}>
                             <img src={rightArrow} alt="flèche droite" />
                         </button>
                     </div>
                 </div>
-                <div className="slider">
+                <div ref={carouselRef} className="slider">
                     {jobsList.map((job, index) => (
                         <CarouselCard
                             key={index}
