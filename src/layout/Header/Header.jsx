@@ -1,5 +1,5 @@
 import "./Header.css";
-import logo from "../../assets/logo-futur-en-train.webp";
+import logo from "../../assets/webp/logo-futur-en-train.webp";
 import { useState, useEffect } from "react";
 import BurgerMenu from "../../components/BurgerMenu/BurgerMenu";
 

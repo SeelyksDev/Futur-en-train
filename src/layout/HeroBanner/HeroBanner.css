@@ -2,9 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../../assets/header-home.webp");
+    background-image: url("../../assets/webp/header-home.webp");
     background-size: cover;
-    height: 500px;
+    height: 400px;
     padding: 0 24px;
 }
 

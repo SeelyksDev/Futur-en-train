@@ -1,0 +1,45 @@
+.wrap-discover {
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 0 20px;
+    height: 50%;
+    color: white;
+}
+
+.wrap-text>span {
+    font-weight: bold;
+}
+
+#arrow-down-white {
+    height: 11px;
+    width: 19px;
+}
+
+.discover-container {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    padding: 0 20px;
+}
+
+#discover-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#discover-link>span {
+    background: var(--primary-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
