@@ -1,18 +1,22 @@
 [
     {
-        "picture": "../assets/webp/img-metier-accueillir.webp",
-        "title": "Accueillir et accompagner les voyageurs"
+        "picture": "/img-carousel/img-metier-accueillir.webp",
+        "text": "Accueillir et accompagner les voyageurs",
+        "alt": "Photo d'une gare ferroviaire"
     },
     {
-        "picture": "../assets/webp/img-metier-organiser.webp",
-        "title": "Organiser et gérer la circulation"
+        "picture": "/img-carousel/img-metier-organiser.webp",
+        "text": "Organiser et gérer la circulation",
+        "alt": "Photo d'un groupe de personnes dans un bureau'"
     },
     {
-        "picture": "../assets/webp/img-metier-entretenir.webp",
-        "title": "Entretenir le réseau et le matériel roulant"
+        "picture": "/img-carousel/img-metier-entretenir.webp",
+        "text": "Entretenir le réseau et le matériel roulant", 
+        "alt": "Photo d'une gare ferroviaire souterraine"
     }, 
     {
-        "picture": "../assets/webp/img-metier-preparer.webp",
-        "title": "Préparer et acheminer les trains"
+        "picture": "/img-carousel/img-metier-preparer.webp",
+        "text": "Préparer et acheminer les trains",
+        "alt": "Photo d'un train arrêté en gare"
     }
 ]
