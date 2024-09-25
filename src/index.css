@@ -1,6 +1,7 @@
 :root {
   --primary-color: linear-gradient(to left, #ee0979, #ff6a00);
   --padding-mobile: 20px;
+  --letter-spacing: 1px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;

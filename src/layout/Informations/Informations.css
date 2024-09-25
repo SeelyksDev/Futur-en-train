@@ -5,13 +5,16 @@
 
 .informations-title {
     font-weight: 900;
+    font-size: 2.1em;
+    text-align: left;
 }
 
 .informations-text {
     margin-bottom: 35px;
     color: gray;
+    text-align: justify;
 }
 
 #stats-container {
-    margin-top: 45px;
+    margin-top: 40px;
 }
