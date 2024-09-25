@@ -1,10 +1,18 @@
-.btn-gradient {
+.btn-gradient, .transparant {
     display: block;
-    background: var(--primary-color);
     color: white;
     font-weight: 700;
     letter-spacing: var(--letter-spacing);
     width: 100%;
     padding: 20px 0;
     font-size: 0.8em;
+    cursor: pointer;
+}
+
+.btn-gradient {
+    background: var(--primary-color);
+}
+
+.transparant {
+    border: 1px solid white;
 }

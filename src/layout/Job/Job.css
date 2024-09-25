@@ -2,4 +2,35 @@
     background-image: url(../../assets/webp/bg-gradient.webp);
     background-size: contain;
     color: white;
+    padding: 0 var(--padding-mobile);
+    padding-top: 50px;
+    padding-bottom: 140px;
+}
+
+.job-title {
+    font-size: 1.9em;
+    margin-bottom: 30px;
+}
+
+.job-text {
+    margin-bottom: 35px;
+}
+
+.carousel {
+    margin-top: 20px;
+}
+
+.carousel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel-title {
+    font-size: 1.9em;
+}
+
+.arrows-container {
+    display: flex;
+    align-items: center;
 }
