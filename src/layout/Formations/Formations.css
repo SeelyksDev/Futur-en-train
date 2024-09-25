@@ -1,0 +1,15 @@
+#formations {
+    margin-top: 200px;
+    background-image: url(../../assets/svg/img-formation.svg);
+    background-size: cover;
+    color: white;
+    padding: 50px;
+}
+
+.formations-title {
+    font-size: 1.9em;
+}
+
+.formations-text {
+    margin: 30px 0;
+}
