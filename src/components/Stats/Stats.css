@@ -1,0 +1,33 @@
+.stats-number {
+    font-size: 65px;
+    font-weight: 900;
+    text-align: left;
+    background: var(--primary-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description {
+    position: relative;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.description::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: var(--primary-color);
+    left: 0;
+}
+
+.stats-title {
+    font-weight: 900;
+}
+
+.stats-subtitle {
+    margin: 0;
+}
