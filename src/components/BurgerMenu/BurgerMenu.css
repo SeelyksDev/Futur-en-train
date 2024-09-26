@@ -11,9 +11,9 @@
     margin-bottom: 5px;
 
     @media screen and (min-width: 1025px) {
-        height: 6px;
+        height: 5px;
         width: 35px;
-        margin-bottom: 6px;
+        margin-bottom: 9px;
     }
 }
 
@@ -32,5 +32,6 @@
 
     @media screen and (min-width: 1025px) {
         font-size: 0.8em;
+        text-align: left;
     }
 }

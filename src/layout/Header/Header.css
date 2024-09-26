@@ -22,6 +22,12 @@ nav>img {
     }
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
 .nav-ul {
     display: flex;
     align-items: center;
@@ -31,5 +37,5 @@ nav>img {
     font-size: 1.5em;
     color: white;
     font-weight: 800;
-    margin-right: 45px;
+    margin-right: 55px;
 }
