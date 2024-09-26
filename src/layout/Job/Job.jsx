@@ -4,6 +4,8 @@ import jobsList from "../../data/jobs.json";
 import CarouselCard from "../../components/CarouselCard/CarouselCard";
 import rightArrow from "../../assets/svg/arrow-right-white.svg";
 import leftArrow from "../../assets/svg/arrow-left-white.svg";
+import leftArrowGrey from "../../assets/svg/arrow-left-grey.svg";
+import rightArrowGrey from "../../assets/svg/arrow-right-grey.svg";
 import slash from "../../assets/svg/slash.svg";
 import "./Job.css";
 
@@ -73,11 +75,17 @@ const Job = () => {
                     <h4 className="carousel-title">Métiers</h4>
                     <div className="arrows-container">
                         <button className="arrow_previous" onClick={scrollPrev}>
-                            <img src={leftArrow} alt="flèche droite" />
+                            <img
+                                src={isAtStart ? leftArrowGrey : leftArrow}
+                                alt="flèche gauche"
+                            />
                         </button>
                         <img src={slash} alt="slash" />
                         <button className="arrow_next" onClick={scrollNext}>
-                            <img src={rightArrow} alt="flèche droite" />
+                            <img
+                                src={isAtEnd ? rightArrowGrey : rightArrow}
+                                alt="flèche droite"
+                            />
                         </button>
                     </div>
                 </div>
