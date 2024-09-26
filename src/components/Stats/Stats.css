@@ -63,7 +63,7 @@
 
     #stats-container .stats:nth-child(3) {
         top: 220px;
-        right: -180px;
+        right: -20%;
         z-index: 5;
     }
 }

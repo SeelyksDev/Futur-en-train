@@ -9,6 +9,8 @@
 
     @media screen and (min-width: 1025px) {
         padding: 80px 120px 220px 120px;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
@@ -50,6 +52,10 @@
     width: 100%;
     padding-left: inherit;
     box-sizing: border-box;
+
+    @media screen and (min-width: 1025px) {
+        padding-left: 120px;
+    }
 }
 
 .carousel-header {

@@ -7,10 +7,12 @@
     @media screen and (min-width: 1025px) {
         position: absolute;
         top: 593px;
-        width: calc(100% - 241px);
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 850px;
         flex-direction: row;
         align-items: center;
-        margin: 0 120px;
+        margin: auto;
         height: 74px;
         z-index: 6;
     }
@@ -30,21 +32,7 @@
         padding: 0;
         height: 100%;
         width: 80%;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    .wrap::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 15px;
-        right: 0;
-        width: 100%;
-        height: 100%;
-
-        transform: skew(-20deg);
-        background: var(--primary-color);
+        z-index: -1;
     }
 }
 
@@ -84,13 +72,6 @@
     align-items: center;
     height: 50%;
     padding: 10px var(--padding-mobile);
-
-    @media screen and (min-width: 1025px) {
-        height: 100%;
-        padding: 0;
-        width: 20%;
-        background-color: white;
-    }
 }
 
 .discover-container:hover #discover-link>span {
@@ -126,5 +107,29 @@
 #discover-link>img {
     @media screen and (min-width: 1025px) {
         width: 30px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .discover-container {
+        position: relative;
+        height: 100%;
+        padding: 0;
+        padding-right: 10px;
+        min-width: 100px;
+        background-color: white;
+    }
+
+    .discover-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -15px;
+        right: 0;
+        width: 30px;
+        height: 100%;
+        transform: skew(-20deg);
+        z-index: -1;
+        background: white;
     }
 }

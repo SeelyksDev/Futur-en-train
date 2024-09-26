@@ -1,14 +1,17 @@
 #formations {
     margin-top: 200px;
     background-image: url(../../assets/svg/img-formation.svg);
+    object-fit: contain;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: white;
     padding: 50px;
 
     @media screen and (min-width: 1025px) {
         margin: 0;
-        padding: 100px;
         height: 290px;
+        padding: 100px;
     }
 }
 

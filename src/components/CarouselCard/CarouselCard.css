@@ -4,6 +4,11 @@
     min-width: 300px;
     margin-right: 10px;
     scroll-snap-align: start;
+
+    @media screen and (min-width: 1025px) {
+        height: 300px;
+        width: 400px;
+    }
 }
 
 .carousel-img {
