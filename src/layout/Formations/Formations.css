@@ -4,12 +4,33 @@
     background-size: cover;
     color: white;
     padding: 50px;
+
+    @media screen and (min-width: 1025px) {
+        margin: 270px 120px 150px 120px;
+        padding: 100px;
+        height: 290px;
+    }
 }
 
 .formations-title {
     font-size: 1.9em;
+
+    @media screen and (min-width: 1025px) {
+        text-align: left;
+        max-width: 350px;
+    }
 }
 
 .formations-text {
     margin: 30px 0;
+
+    @media screen and (min-width: 1025px) {
+        text-align: left;
+        max-width: 350px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 1.1em;
+        color: gainsboro;
+        letter-spacing: 1.4px;
+    }
 }

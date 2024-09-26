@@ -11,6 +11,7 @@
         align-items: center;
         margin: 0 90px;
         height: 74px;
+        z-index: 6;
     }
 }
 

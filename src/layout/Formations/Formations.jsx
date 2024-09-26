@@ -11,7 +11,10 @@ const Formations = () => {
                 Trouvez le centre de formation qui correspond à la zone
                 géographique de votre choix
             </p>
-            <Button text="LOCALISER UNE FORMATION" style="btn-gradient" />
+            <Button
+                text="LOCALISER UNE FORMATION"
+                style="btn-gradient locate-training"
+            />
         </section>
     );
 };
