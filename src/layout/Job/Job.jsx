@@ -56,14 +56,18 @@ const Job = () => {
 
     return (
         <section id="job">
-            <h2 className="job-title">Un métier, une formation, un avenir</h2>
-            <p className="job-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit, officiis consequatur. Excepturi laborum iure
-                laboriosam, numquam, necessitatibus, odit possimus tenetur
-                labore earum nostrum quis architecto eligendi reprehenderit?
-            </p>
-            <Button text="TOUS LES MÉTIERS" style="transparant" />
+            <div className="job-center-box">
+                <h2 className="job-title">
+                    Un métier, une formation, un avenir
+                </h2>
+                <p className="job-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit, officiis consequatur. Excepturi laborum iure
+                    laboriosam, numquam, necessitatibus, odit possimus tenetur
+                    labore earum nostrum quis architecto eligendi reprehenderit?
+                </p>
+                <Button text="TOUS LES MÉTIERS" style="transparant all-jobs" />
+            </div>
             <div className="carousel">
                 <div className="carousel-header">
                     <h4 className="carousel-title">Métiers</h4>

@@ -14,9 +14,18 @@
 }
 
 .learn-more {
-    max-width: 250px;
+    @media screen and (min-width: 1025px) {
+        max-width: 250px;
+    }
 }
 
 .transparant {
     border: 1px solid white;
+}
+
+.all-jobs {
+    @media screen and (min-width: 1025px) {
+        max-width: 250px;
+        letter-spacing: 2px;
+    }
 }
