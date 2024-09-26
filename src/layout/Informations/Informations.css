@@ -1,5 +1,23 @@
 .information-wrapper {
     background-color: #fef2f7;
+    position: relative;
+}
+
+@media screen and (min-width: 1025px) {
+    .information-wrapper {
+        overflow: hidden;
+    }
+
+    .information-wrapper::after {
+        content: "";
+        bottom: -310px;
+        left: 70px;
+        position: absolute;
+        width: 100%;
+        transform: rotate(-10deg);
+        height: 400px;
+        background-color: white;
+    }
 }
 
 #informations {
