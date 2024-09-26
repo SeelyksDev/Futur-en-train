@@ -6,10 +6,10 @@
     @media screen and (min-width: 1025px) {
         position: absolute;
         top: 593px;
-        width: calc(100% - 175px);
+        width: calc(100% - 241px);
         flex-direction: row;
         align-items: center;
-        margin: 0 90px;
+        margin: 0 120px;
         height: 74px;
         z-index: 6;
     }
@@ -37,24 +37,45 @@
         content: '';
         position: absolute;
         top: 0;
-        left: 45px;
+        left: 15px;
         right: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
+
         transform: skew(-20deg);
         background: var(--primary-color);
     }
 }
 
+.wrap-text {
+    @media screen and (min-width: 1025px) {
+        z-index: 7;
+        font-size: 1.5em;
+        margin-left: 60px;
+    }
+}
 
 .wrap-text>span {
     font-weight: bold;
 }
 
-#arrow-down-white {
+.arrow-down-white {
     height: 11px;
     width: 19px;
+    transition: transform 0.3s ease;
+
+    @media screen and (min-width: 1025px) {
+        z-index: 7;
+        margin-right: 60px;
+    }
+}
+
+.isOpen {
+    transform: rotate(180deg);
+}
+
+.isClosed {
+    transform: rotate(0deg);
 }
 
 .discover-container {
