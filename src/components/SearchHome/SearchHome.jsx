@@ -20,6 +20,7 @@ const SearchHome = () => {
                 />
             </div>
             <div className="discover-container">
+                {/* Quand les pages seront faites, relier les liens */}
                 <a href="#" id="discover-link">
                     <span>DÉCOUVRIR</span>
                     <img

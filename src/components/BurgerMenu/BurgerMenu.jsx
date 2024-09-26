@@ -1,8 +1,8 @@
 import "./BurgerMenu.css";
 
-const BurgerMenu = () => {
+const BurgerMenu = ({ setIsOpen, isOpen }) => {
     return (
-        <div className="burger">
+        <div className="burger" onClick={() => setIsOpen(!isOpen)}>
             <div className="burger-container">
                 <span className="burger-bar"></span>
                 <span className="burger-bar"></span>

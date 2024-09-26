@@ -1,12 +1,14 @@
-import "./Header.css";
-import logo from "../../assets/webp/logo-futur-en-train.webp";
 import { useState, useEffect } from "react";
+import logo from "../../assets/webp/logo-futur-en-train.webp";
 import BurgerMenu from "../../components/BurgerMenu/BurgerMenu";
+import SideMenu from "../../components/SideMenu/SideMenu";
+import "./Header.css";
 
 const Header = () => {
     const [isSmallScreen, setIsSmallScreen] = useState(
         window.innerWidth < 1024
     );
+    const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 1024px)");
@@ -25,12 +27,21 @@ const Header = () => {
             <nav>
                 <img src={logo} alt="logo de futur en train" />
                 {isSmallScreen ? (
-                    <BurgerMenu />
+                    <>
+                        <BurgerMenu setIsOpen={setIsOpen} isOpen={isOpen} />
+                        {isOpen ? (
+                            <SideMenu setIsOpen={setIsOpen} isOpen={isOpen} />
+                        ) : null}
+                    </>
                 ) : (
                     <div className="nav-right">
                         <ul className="nav-ul">
-                            <li className="nav-li">Formations</li>
-                            <li className="nav-li">Métiers</li>
+                            <li className="nav-li">
+                                <a href="#formations">Formations</a>
+                            </li>
+                            <li className="nav-li">
+                                <a href="#job">Métiers</a>
+                            </li>
                         </ul>
                         <BurgerMenu />
                     </div>
