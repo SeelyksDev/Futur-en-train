@@ -1,5 +1,9 @@
 .stats {
     margin-top: 40px;
+
+    @media screen and (min-width: 1025px) {
+        position: absolute;
+    }
 }
 
 .stats-number {
@@ -30,8 +34,35 @@
 .stats-title {
     font-weight: 900;
     letter-spacing: var(--letter-spacing);
+
+    @media screen and (min-width: 1025px) {
+        max-width: 200px;
+    }
 }
 
 .stats-subtitle {
     margin: 0;
+
+    @media screen and (min-width: 1025px) {
+        max-width: 250px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #stats-container .stats:nth-child(1) {
+        top: -80px;
+        right: -40px;
+    }
+
+    #stats-container .stats:nth-child(2) {
+        top: 100px;
+        left: 50px;
+
+    }
+
+    #stats-container .stats:nth-child(3) {
+        top: 220px;
+        right: -180px;
+        z-index: 5;
+    }
 }

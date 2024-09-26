@@ -1,20 +1,59 @@
 #informations {
-    background-color: #FEF2F7;
+    background-color: #fef2f7;
     padding: 40px var(--padding-mobile);
+}
+
+.info-col-left {
+    @media screen and (min-width: 1025px) {
+        width: 50%;
+        max-width: 400px;
+    }
 }
 
 .informations-title {
     font-weight: 900;
     font-size: 2.1em;
     text-align: left;
+
+    @media screen and (min-width: 1025px) {
+        line-height: 45px;
+    }
 }
 
 .informations-text {
     margin-bottom: 35px;
     color: gray;
     text-align: justify;
+
+    @media screen and (min-width: 1025px) {
+        max-width: 330px;
+    }
 }
 
 #stats-container {
     margin-top: 40px;
+    width: 50%;
+
+    @media screen and (min-width: 1025px) {
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #informations {
+        display: flex;
+        flex-direction: row;
+        padding: 130px 120px 200px 120px;
+    }
+
+    #informations::after {
+        content: "";
+        position: absolute;
+        right: -30px;
+        bottom: -713px;
+        width: 170px;
+        height: 400px;
+        transform: skew(280deg, 239deg);
+        background-color: white;
+    }
 }
