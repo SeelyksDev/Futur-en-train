@@ -4,7 +4,19 @@
 
 #informations {
     padding: 40px var(--padding-mobile);
+}
 
+@media screen and (min-width: 1025px) {
+    #informations {
+        display: flex;
+        flex-direction: row;
+        padding: 130px 120px 200px 120px;
+        position: relative;
+        margin: auto;
+        width: 100%;
+        max-width: 1440px;
+        box-sizing: border-box;
+    }
 }
 
 .info-col-left {
@@ -42,17 +54,4 @@
         position: relative;
         width: 50%;
     }
-}
-
-@media screen and (min-width: 1025px) {
-    #informations {
-        display: flex;
-        flex-direction: row;
-        max-width: 1300px;
-        padding: 130px 120px 200px 120px;
-        position: relative;
-        margin: auto;
-    }
-
-
 }

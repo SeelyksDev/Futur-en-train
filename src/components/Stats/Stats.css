@@ -49,7 +49,7 @@
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1226px) {
     #stats-container .stats:nth-child(1) {
         top: -80px;
         right: -40px;
@@ -64,6 +64,25 @@
     #stats-container .stats:nth-child(3) {
         top: 220px;
         right: -20%;
+        z-index: 5;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    #stats-container .stats:nth-child(1) {
+        top: -80px;
+        right: -40px;
+    }
+
+    #stats-container .stats:nth-child(2) {
+        top: 100px;
+        left: -30px;
+
+    }
+
+    #stats-container .stats:nth-child(3) {
+        top: 220px;
+        right: -30%;
         z-index: 5;
     }
 }

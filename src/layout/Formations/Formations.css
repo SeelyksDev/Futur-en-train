@@ -9,9 +9,10 @@
     padding: 50px;
 
     @media screen and (min-width: 1025px) {
-        margin: 0;
+        margin: auto;
         height: 290px;
         padding: 100px;
+        max-width: 1440px;
     }
 }
 
