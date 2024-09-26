@@ -10,7 +10,21 @@
 }
 
 .btn-gradient {
+    position: relative;
     background: var(--primary-color);
+    overflow: hidden;
+}
+
+.btn-gradient::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 28px;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.1) rotate(-12deg);
+    background-color: rgba(255, 255, 255, 0.15);
+
 }
 
 .learn-more {
