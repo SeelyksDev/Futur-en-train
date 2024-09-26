@@ -1,7 +1,7 @@
 import { useState } from "react";
 import arrowDownWhite from "../../assets/svg/arrow-down-white.svg";
 import arrowRightColor from "../../assets/svg/arrow-right-color.svg";
-import "./SearchHome.css";
+import "./WrapDiscover.css";
 
 const SearchHome = () => {
     const [isOpen, setIsOpen] = useState(false);

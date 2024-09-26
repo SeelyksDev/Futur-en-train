@@ -36,12 +36,8 @@ const Header = () => {
                 ) : (
                     <div className="nav-right">
                         <ul className="nav-ul">
-                            <li className="nav-li">
-                                <a href="#formations">Formations</a>
-                            </li>
-                            <li className="nav-li">
-                                <a href="#job">Métiers</a>
-                            </li>
+                            <li className="nav-li">Formations</li>
+                            <li className="nav-li">Métiers</li>
                         </ul>
                         <BurgerMenu />
                     </div>
