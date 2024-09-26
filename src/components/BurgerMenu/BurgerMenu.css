@@ -33,5 +33,6 @@
     @media screen and (min-width: 1025px) {
         font-size: 0.8em;
         text-align: left;
+        font-weight: 900;
     }
 }
