@@ -1,5 +1,10 @@
 .burger {
     margin-right: 25px;
+    cursor: pointer;
+}
+
+.burger:hover .burger-bar {
+    background: var(--primary-color);
 }
 
 .burger-bar {
