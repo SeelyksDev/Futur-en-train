@@ -51,11 +51,11 @@
     #formations-container::after {
         content: '';
         position: absolute;
-        bottom: -90px;
+        bottom: -150px;
         left: 0;
         width: 100%;
-        height: 400px;
-        transform: scale(1.1) rotate(9deg);
+        height: 450px;
+        transform: scale(1.1) rotate(7deg);
         background-color: #fef2f7;
         z-index: -2;
     }
