@@ -6,7 +6,7 @@
     padding: 50px;
 
     @media screen and (min-width: 1025px) {
-        margin: 250px 120px 140px 120px;
+        margin: 0;
         padding: 100px;
         height: 290px;
     }
@@ -33,4 +33,27 @@
         color: gainsboro;
         letter-spacing: 1.4px;
     }
+}
+
+@media screen and (min-width: 1025px) {
+    #formations-container {
+        @media screen and (min-width: 1025px) {
+            position: relative;
+            padding: 250px 120px 140px 120px;
+            overflow: hidden;
+        }
+    }
+
+    #formations-container::after {
+        content: '';
+        position: absolute;
+        bottom: -90px;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        transform: scale(1.1) rotate(9deg);
+        background-color: #fef2f7;
+        z-index: -2;
+    }
+
 }
