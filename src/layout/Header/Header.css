@@ -34,8 +34,20 @@ nav>img {
 }
 
 .nav-li {
+    position: relative;
     font-size: 1.5em;
     color: white;
     font-weight: 800;
     margin-right: 55px;
+    cursor: pointer;
+}
+
+.nav-li:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--primary-color);
 }

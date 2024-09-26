@@ -7,12 +7,14 @@
     padding: 20px 0;
     font-size: 0.8em;
     cursor: pointer;
+    transition: transform 0.5s ease;
 }
 
 .btn-gradient {
     position: relative;
     background: var(--primary-color);
     overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
 .btn-gradient::after {
@@ -25,6 +27,10 @@
     transform: scale(1.1) rotate(-12deg);
     background-color: rgba(255, 255, 255, 0.15);
 
+}
+
+.btn-gradient:hover, .transparant:hover {
+    transform: scale(1.1);
 }
 
 .learn-more {

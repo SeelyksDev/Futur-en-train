@@ -7,7 +7,7 @@ const SearchHome = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div className="wrap-discover">
-            <div className="wrap">
+            <div className="wrap" onClick={() => setIsOpen(!isOpen)}>
                 <div className="wrap-text">
                     Je suis <span>Etudiant</span>
                 </div>
@@ -17,7 +17,6 @@ const SearchHome = () => {
                     }`}
                     src={arrowDownWhite}
                     alt="flèche vers le bas"
-                    onClick={() => setIsOpen(!isOpen)}
                 />
             </div>
             <div className="discover-container">
