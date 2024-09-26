@@ -41,11 +41,16 @@
 .learn-more {
     @media screen and (min-width: 1025px) {
         max-width: 250px;
+        font-size: 0.9em;
     }
 }
 
 .transparant {
     border: 1px solid white;
+
+    @media screen and (min-width: 1025px) {
+        font-size: 0.9em;
+    }
 }
 
 .all-jobs {
